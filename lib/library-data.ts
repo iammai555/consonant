@@ -6,10 +6,10 @@ export type Subject = {
 }
 
 export const STATS: { value: string; label: string }[] = [
-  { value: 'MMVIII', label: 'Established' },
-  { value: 'VIII', label: 'Faculties' },
-  { value: 'CXLIV', label: 'Subjects' },
-  { value: 'MMMDCXII', label: 'Documents' },
+  { value: 'II', label: 'Years Covered' },
+  { value: 'II', label: 'Odd Semesters' },
+  { value: 'XI', label: 'Subjects' },
+  { value: '—', label: 'Documents' },
 ]
 
 export const NAV_YEARS: {
@@ -21,7 +21,7 @@ export const NAV_YEARS: {
     numeral: 'I',
     label: 'First Year',
     semesters: [
-      { numeral: 'I', label: 'Semester' },
+      { numeral: 'I', label: 'Semester', active: true },
       { numeral: 'II', label: 'Semester' },
     ],
   },
@@ -49,51 +49,47 @@ export const NAV_YEARS: {
       { numeral: 'II', label: 'Semester' },
     ],
   },
+  {
+    numeral: 'V',
+    label: 'Fifth Year',
+    semesters: [
+      { numeral: 'I', label: 'Semester' },
+      { numeral: 'II', label: 'Semester' },
+    ],
+  },
 ]
 
-export const CONTENT_TYPES = ['Syllabus', 'Notes', 'Past Papers', 'Extras']
+export const CONTENT_TYPES = ['Syllabus', 'Notes', 'Sessional', 'End Semester', 'Extras']
 
 export const SUBJECTS: Subject[] = [
   {
-    name: 'Mathematical Analysis',
-    tags: ['Notes', 'Papers', 'Extras'],
-    units: 6,
-    pastPapers: 12,
-  },
-  {
-    name: 'Classical Mechanics',
-    tags: ['Notes', 'Papers'],
+    name: 'Criminal Law – I',
+    tags: ['Notes', 'Sessional', 'End Semester'],
     units: 5,
-    pastPapers: 9,
-  },
-  {
-    name: 'Discrete Structures',
-    tags: ['Syllabus', 'Notes', 'Papers'],
-    units: 7,
-    pastPapers: 11,
-  },
-  {
-    name: 'Political Philosophy',
-    tags: ['Notes', 'Extras'],
-    units: 4,
     pastPapers: null,
   },
   {
-    name: 'Comparative Literature',
-    tags: ['Syllabus', 'Notes'],
+    name: 'Family Law – I',
+    tags: ['Notes', 'Sessional', 'End Semester'],
     units: 5,
-    pastPapers: 6,
+    pastPapers: null,
   },
   {
-    name: 'Organic Chemistry',
-    tags: ['Notes', 'Papers', 'Extras'],
-    units: 8,
-    pastPapers: 14,
+    name: 'Environmental Law',
+    tags: ['Notes', 'Sessional', 'End Semester'],
+    units: 5,
+    pastPapers: null,
   },
   {
-    name: 'Constitutional Law',
-    tags: ['Syllabus', 'Papers'],
-    units: 6,
-    pastPapers: 8,
+    name: 'Constitutional Law – I',
+    tags: ['Notes', 'Sessional', 'End Semester'],
+    units: 5,
+    pastPapers: null,
+  },
+  {
+    name: 'Sociology – I',
+    tags: ['Notes', 'Sessional', 'End Semester'],
+    units: 5,
+    pastPapers: null,
   },
 ]
