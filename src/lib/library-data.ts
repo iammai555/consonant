@@ -188,7 +188,3 @@ export const SEMESTER_3_SUBJECTS: Subject[] = [
 ]
 
 export const SUBJECTS: Subject[] = SEMESTER_3_SUBJECTS
-
-export const SITE_NAME = 'Athenaeum'
-
-export default SUBJECTS
